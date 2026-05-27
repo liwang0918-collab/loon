@@ -1,29 +1,26 @@
-#!name=高级节点检测
-#!desc=节点解锁/IP信息/UDP/纯净度检测
+#!name=高级节点检测面板
+#!desc=Netflix/OpenAI/TikTok/UDP/IP信息检测
 #!author=ChatGPT
-#!icon=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Speedtest.png
+
+[Panel]
+
+Netflix = script-name=unlock, update-interval=300
+OpenAI = script-name=openai, update-interval=300
+TikTok = script-name=tiktok, update-interval=300
+UDP = script-name=udp, update-interval=300
+IP信息 = script-name=ipinfo, update-interval=300
+延迟 = script-name=ping, update-interval=300
 
 [Script]
 
-节点信息
+unlock = type=generic, timeout=30, script-path=https://raw.githubusercontent.com/你的用户名/Loon/main/script/unlock.js
 
-Node-IP = type=http-request, pattern=^https://nodecheck.loon/ip$, script-path=https://raw.githubusercontent.com/你的用户名/Loon/main/script/ipinfo.js, requires-body=false, timeout=20, enable=true
+openai = type=generic, timeout=30, script-path=https://raw.githubusercontent.com/你的用户名/Loon/main/script/openai.js
 
-流媒体解锁
+tiktok = type=generic, timeout=30, script-path=https://raw.githubusercontent.com/你的用户名/Loon/main/script/tiktok.js
 
-Node-Unlock = type=http-request, pattern=^https://nodecheck.loon/unlock$, script-path=https://raw.githubusercontent.com/你的用户名/Loon/main/script/unlock.js, requires-body=false, timeout=30, enable=true
+udp = type=generic, timeout=20, script-path=https://raw.githubusercontent.com/你的用户名/Loon/main/script/udp.js
 
-UDP检测
+ipinfo = type=generic, timeout=20, script-path=https://raw.githubusercontent.com/你的用户名/Loon/main/script/ipinfo.js
 
-Node-UDP = type=http-request, pattern=^https://nodecheck.loon/udp$, script-path=https://raw.githubusercontent.com/你的用户名/Loon/main/script/udp.js, requires-body=false, timeout=20, enable=true
-
-IP纯净度
-
-Node-CleanIP = type=http-request, pattern=^https://nodecheck.loon/clean$, script-path=https://raw.githubusercontent.com/你的用户名/Loon/main/script/cleanip.js, requires-body=false, timeout=30, enable=true
-
-节点测速
-
-Node-Ping = type=http-request, pattern=^https://nodecheck.loon/ping$, script-path=https://raw.githubusercontent.com/你的用户名/Loon/main/script/ping.js, requires-body=false, timeout=20, enable=true
-
-[MITM]
-hostname = nodecheck.loon
+ping = type=generic, timeout=20, script-path=https://raw.githubusercontent.com/你的用户名/Loon/main/script/ping.js
