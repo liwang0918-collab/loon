@@ -1,31 +1,17 @@
-#!name=高级节点检测面板
-#!desc=Netflix/OpenAI/TikTok/UDP/IP信息检测
+#!name=高级节点检测
+#!desc=OpenAI/TikTok/Netflix/IP/UDP 检测
 #!author=ChatGPT
-
-[Panel]
-
-节点信息 = script-name=ipinfo, update-interval=300
-
-延迟测试 = script-name=ping, update-interval=300
-
-UDP测试 = script-name=udp, update-interval=300
-
-OpenAI = script-name=openai, update-interval=300
-
-TikTok = script-name=tiktok, update-interval=300
-
-Netflix = script-name=netflix, update-interval=300
 
 [Script]
 
-ipinfo = type=generic, timeout=20, script-path=https://raw.githubusercontent.com/liwang0918/Loon/main/script/ipinfo.js
+IP信息 = type=panel, script-path=https://raw.githubusercontent.com/liwang0918/Loon/main/script/ipinfo.js, update-interval=300
 
-ping = type=generic, timeout=20, script-path=https://raw.githubusercontent.com/liwang0918/Loon/main/script/ping.js
+延迟测试 = type=panel, script-path=https://raw.githubusercontent.com/liwang0918/Loon/main/script/ping.js, update-interval=300
 
-udp = type=generic, timeout=20, script-path=https://raw.githubusercontent.com/liwang0918/Loon/main/script/udp.js
+UDP测试 = type=panel, script-path=https://raw.githubusercontent.com/liwang0918/Loon/main/script/udp.js, update-interval=300
 
-openai = type=generic, timeout=20, script-path=https://raw.githubusercontent.com/liwang0918/Loon/main/script/openai.js
+OpenAI = type=panel, script-path=https://raw.githubusercontent.com/liwang0918/Loon/main/script/openai.js, update-interval=300
 
-tiktok = type=generic, timeout=20, script-path=https://raw.githubusercontent.com/liwang0918/Loon/main/script/tiktok.js
+TikTok = type=panel, script-path=https://raw.githubusercontent.com/liwang0918/Loon/main/script/tiktok.js, update-interval=300
 
-netflix = type=generic, timeout=20, script-path=https://raw.githubusercontent.com/liwang0918/Loon/main/script/netflix.js
+Netflix = type=panel, script-path=https://raw.githubusercontent.com/liwang0918/Loon/main/script/netflix.js, update-interval=300
