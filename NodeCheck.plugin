@@ -18,14 +18,14 @@ Netflix = script-name=netflix, update-interval=300
 
 [Script]
 
-ipinfo = type=generic, timeout=20, script-path=https://raw.githubusercontent.com/你的用户名/Loon/main/script/ipinfo.js
+ipinfo = type=generic, timeout=20, script-path=https://raw.githubusercontent.com/liwang0918/Loon/main/script/ipinfo.js
 
-ping = type=generic, timeout=20, script-path=https://raw.githubusercontent.com/你的用户名/Loon/main/script/ping.js
+ping = type=generic, timeout=20, script-path=https://raw.githubusercontent.com/liwang0918/Loon/main/script/ping.js
 
-udp = type=generic, timeout=20, script-path=https://raw.githubusercontent.com/你的用户名/Loon/main/script/udp.js
+udp = type=generic, timeout=20, script-path=https://raw.githubusercontent.com/liwang0918/Loon/main/script/udp.js
 
-openai = type=generic, timeout=20, script-path=https://raw.githubusercontent.com/你的用户名/Loon/main/script/openai.js
+openai = type=generic, timeout=20, script-path=https://raw.githubusercontent.com/liwang0918/Loon/main/script/openai.js
 
-tiktok = type=generic, timeout=20, script-path=https://raw.githubusercontent.com/你的用户名/Loon/main/script/tiktok.js
+tiktok = type=generic, timeout=20, script-path=https://raw.githubusercontent.com/liwang0918/Loon/main/script/tiktok.js
 
-netflix = type=generic, timeout=20, script-path=https://raw.githubusercontent.com/你的用户名/Loon/main/script/netflix.js
+netflix = type=generic, timeout=20, script-path=https://raw.githubusercontent.com/liwang0918/Loon/main/script/netflix.js
