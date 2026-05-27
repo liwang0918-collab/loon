@@ -4,23 +4,28 @@
 
 [Panel]
 
-Netflix = script-name=unlock, update-interval=300
+节点信息 = script-name=ipinfo, update-interval=300
+
+延迟测试 = script-name=ping, update-interval=300
+
+UDP测试 = script-name=udp, update-interval=300
+
 OpenAI = script-name=openai, update-interval=300
+
 TikTok = script-name=tiktok, update-interval=300
-UDP = script-name=udp, update-interval=300
-IP信息 = script-name=ipinfo, update-interval=300
-延迟 = script-name=ping, update-interval=300
+
+Netflix = script-name=netflix, update-interval=300
 
 [Script]
-
-unlock = type=generic, timeout=30, script-path=https://raw.githubusercontent.com/你的用户名/Loon/main/script/unlock.js
-
-openai = type=generic, timeout=30, script-path=https://raw.githubusercontent.com/你的用户名/Loon/main/script/openai.js
-
-tiktok = type=generic, timeout=30, script-path=https://raw.githubusercontent.com/你的用户名/Loon/main/script/tiktok.js
-
-udp = type=generic, timeout=20, script-path=https://raw.githubusercontent.com/你的用户名/Loon/main/script/udp.js
 
 ipinfo = type=generic, timeout=20, script-path=https://raw.githubusercontent.com/你的用户名/Loon/main/script/ipinfo.js
 
 ping = type=generic, timeout=20, script-path=https://raw.githubusercontent.com/你的用户名/Loon/main/script/ping.js
+
+udp = type=generic, timeout=20, script-path=https://raw.githubusercontent.com/你的用户名/Loon/main/script/udp.js
+
+openai = type=generic, timeout=20, script-path=https://raw.githubusercontent.com/你的用户名/Loon/main/script/openai.js
+
+tiktok = type=generic, timeout=20, script-path=https://raw.githubusercontent.com/你的用户名/Loon/main/script/tiktok.js
+
+netflix = type=generic, timeout=20, script-path=https://raw.githubusercontent.com/你的用户名/Loon/main/script/netflix.js
